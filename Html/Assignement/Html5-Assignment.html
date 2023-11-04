@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Html5 Assignement Charbel Daher</title>
+  <style>
+    .header {
+      width: 100%;
+      text-align: center;
+      display: inline-block;
+      margin: 0 1em;
+      background-color: #0000ff;
+    }
+
+    p h1 {
+      display: inline-block;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .personalInfos {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 20px;
+    }
+
+    .personalInfos img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+    }
+
+    .personalInfos span {
+      background-color: #fff;
+      padding: 20px;
+      margin-left: 20px;
+      border-radius: 5px;
+    }
+
+    .work ol li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .work ol li dl {
+      width: 50%;
+    }
+
+    .work ol li span {
+      text-align: right;
+    }
+
+    .projects {
+      border: 1px solid black;
+      padding: 10px;
+      width: 100%;
+    }
+
+    .projects ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .projects li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .projects li img {
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+    }
+
+    .projects li span {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+      .projects li img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .projects li span {
+        width: 50%;
+      }
+    }
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    fieldset {
+      padding: 0;
+      margin-bottom: 20px;
+    }
+    
+    legend {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px; 
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    input, 
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
+    
+    button {
+      background: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background: #0062cc;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header" name="header" class="header">
+    <p>
+    <h1>Charbel Daher
+
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
+      CCE student
+    </h1>
+    </p>
+  </div>
+  <div id="personalInfos" name="personalInfos" class="personalInfos">
+
+    <img src="pic.jpg" width="300" height="300">
+    <span>
+      Hello, i am Charbel Daher a 4th year CCE student at ULFG2 taking the techlarious mern stack bootcamp
+    </span>
+
+  </div>
+  <fieldset class="work" id="word" name="work">
+    <legend>Experience</legend>
+    <ol>
+      <li>
+        <dl>
+          <dt>
+            IBM fullstack software developer
+          </dt>
+          <dd>2 month training</dd>
+          <dd>BACkend dev</dd>
+          <dd>containers</dd>
+          <dd>cloud computing</dd>
+        </dl>
+        <span>finished september 2023</span>
+      </li>
+      <br>
+
+      <li>
+        <dl>
+          <dt>Zaka <abbr title="Artificial intelligence">AI </abbr> Bootcamp</dt>
+          <dd>1month training</dd>
+          <dd>Learned the foundation of Ai</dd>
+          <dd>Machine and deep learning</dd>
+          <dd>computer vision</dd>
+          <dd>nlp</dd>
+          <dd>time series analysis</dd>
+        </dl>
+        <span>Finished june 2023</span>
+      </li>
+    </ol>
+
+  </fieldset>
+  <fieldset class="projects" id="projects" name="projects">
+    <legend>Projects</legend>
+    <ul>
+      <li>
+        <img src="shop.jpeg" alt="Coffee shop">
+        <span>This is a coffee shop project written in c#, using file as database where a user finds and buy products
+          and an admin who can edit and add and delete items</span>
+      </li>
+      <li>
+        <img src="dealerships.PNG" alt="Web Project">
+        <span>This is a guided web project where i wrote a web site using django stack where users can post reviews
+          about cars</span>
+      </li>
+
+    </ul>
+  </fieldset>
+  <fieldset class="skills" id="skills" name="skills">
+    <legend>Skills</legend>
+    <ul>
+      <li>Programming languages: Python (Expert), Java (Intermediate), C++ (Beginner)</li>
+      <li>Web development: HTML, CSS, JavaScript (Intermediate)</li>
+      <li>Machine learning: TensorFlow, PyTorch (Intermediate)</li>
+      <li>Cloud computing: AWS, Azure (Beginner)</li>
+    </ul>
+  </fieldset>
+
+
+
+  <form action="submit">
+      <legend>contact form</legend>
+      <p>Charbel Daher</p>
+      <p>70435237</p>
+      <p>charbeldaher34@gmail.com</p>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea><br>
+      <label for="referrer">Where did you hear about me?</label>
+      <select id="referrer" name="referrer">
+        <option value="">Select an option</option>
+        <option value="google">Google</option>
+        <option value="friend">Friend</option>
+        <option value="other">Other</option>
+      </select><br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone"><br>
+
+      <label for="linkedin">LinkedIn Profile:</label>
+      <input type="url" id="linkedin" name="linkedin"><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br>
+
+      <button type="submit">Submit</button>
+
+  </form>
+
+</body>
+
+</html>

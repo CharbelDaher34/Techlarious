@@ -1,0 +1,82 @@
+/* Create a container for the centered divs */
+.centered-container {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: stretch; /* Stretch content vertically to the same height */
+    background-color:black;
+    padding: 80px; /* Add padding to limit the size of the container */
+}
+
+/* Style for the combined container */
+.container {
+    display: flex;
+    background-color: black;
+}
+
+/* Style for the left div (sign_in) */
+.sign_in {
+    flex: 1; /* Make both divs share equal width */
+    background-color: #3498db; /* Example background color */
+    color: white;
+    padding: 20px;
+}
+
+/* Style for the right div (data) */
+.data {
+    flex: 1; /* Make both divs share equal width */
+    background-color: #e74c3c; /* Example background color */
+    color: white;
+    padding: 20px;
+}
+
+/* The rest of your CSS remains the same */
+.icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.sign_up {
+    color: white;
+    background: green;
+    border-radius: 3px;
+}
+
+.form {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 80%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.data, .sign_in {
+    flex: 1;
+
+    padding: 10px;
+    border: 1px solid #000;
+}
+.sign-in-option {
+    display: flex; 
+    align-items: center; 
+    margin: 10px 0;
+    background-color: gold;
+  }
+  .data{
+    border-bottom-right-radius:20px ;
+    border-top-right-radius: 20px;
+
+  }
+  .sign_in{
+    border-bottom-left-radius:20px ;
+    border-top-left-radius: 20px;
+  }
